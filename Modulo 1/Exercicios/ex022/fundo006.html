@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>testando imagem do site</title>
+    <title>testando magem do site</title>
     <style>
     body {
         height: 100vh;
@@ -14,15 +14,25 @@
         background-repeat: no-repeat;
         background-size:auto;
         background-size: cover;
+        background-attachment: fixed;
+
+        /* shortand-backgroud
+         color>image>position>repet>[size]>attachment
+         */
+         background-color: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+         background-size: cover;
+
 
     }
     main {
         background-color: white;
-        width: 400px;
+        max-width: 800px;
         padding: 10px;
         margin: auto;
         border: 1px solid darkblue;
         border-radius: 5px;
+
+        
 
     }
 
