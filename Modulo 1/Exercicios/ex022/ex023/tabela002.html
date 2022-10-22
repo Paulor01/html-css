@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif, Courier, monospace;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td,th {
+            padding: 10px;
+            border:1px solid black
+            
+        }
+
+        
+
+        thead,tfoot {
+            background-color: rgb(48, 47, 47);
+            color: white;
+        }
+
+        thead > tr > th {
+            position:-ms-page;
+            top:0ch;
+            background-color:rgb(48, 47, 47) ;
+        }
+        
+        
+        tbody > tr:nth-child(2n) {
+            background-color: blue;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        caption {
+            font-size: 1.em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead
+    </style>
+    <!--
+        ANATOMIA PARA TABELAS GRNADES TABLES
+        THEAD (CABEÇA DA TABELA,CABEÇALHO)
+           TR,TD,TH
+        TBODY (CORPO DA TABELA ,ESTADOS )
+           TR,TD,TH
+        TFOOT
+           TR,TD,TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 40px;;">População</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46.649.132</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.411.923</th>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.463.349</th>
+            </tr>
+
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3.094.325</td>
+            </tr>
+
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.206.589</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.463.349</th>
+            </tr>
+
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3.094.325</td>
+            </tr>
+
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.206.589</td>
+            </tr>
+            
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.463.349</th>
+            </tr>
+
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3.094.325</td>
+            </tr>
+
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.206.589</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.463.349</th>
+            </tr>
+
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3.094.325</td>
+            </tr>
+
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.206.589</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.463.349</th>
+            </tr>
+
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3.094.325</td>
+            </tr>
+
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.206.589</td>
+            </tr>
+
+            
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td class="num">0000</td>
+                
+            </tr>
+
+        </tfoot>
+    </table>
+
+
+    
+</body>
+</html>
