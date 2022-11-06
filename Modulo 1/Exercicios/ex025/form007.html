@@ -9,14 +9,37 @@
 </head>
 <body>
     <h1>Exemplo</h1>
+    <form action="cadastro.php" method="post" autocomplete="on"
+
     <p>
         <label for="iest"> Estado </label>
         <select name="estado" id="iest">
-            <option value="DF">Distrito Federal</option>
-            <option value="MG">Minas Gerais</option>
-            <option value="SP">São Paulo</option>
+            <optgroup>
+                <option value=""select> ---</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="SP">São Paulo</option>
+            </optgroup>
         </select>
     </p>
-    
+
+    <p>
+        <label for="iprof">Profissão</label>
+        <input type="text" name="prof" id="iprof" list="istprof">
+
+        <datalist id="istprof">
+            <option value="Soldado"></option>
+            <option value="Cabo"></option>
+            <option value="Cabo da Guarda"></option>
+            <option value="Cabo do Dia"></option>
+            <option value="1 ST"></option>
+        </datalist>
+        
+    </p>
+
+    <P>
+        <input type="Submit" value="Enviar">
+        <input type="Reset" value=" Limpar">    
+    </form>    
 </body>
 </html>
