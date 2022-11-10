@@ -3,21 +3,21 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
 
+    margin: 0px;
+    padding: 0px;
+
 }
 body,html {
     background-color: lightgrey;
-
-    
 }
 
 header {
-    background-color: gray;
+    background-color: rgb(141, 140, 140);
 }
 
-header h1 {
+header > h1 {
     padding: 10px;
     text-align: center;
-
 }
 
 menu {
@@ -36,4 +36,30 @@ menu > ul > li > a {
     text-align: center;
     background-color: rgba(156, 156, 156, 0.582);
     color: white;
+    border-top: 2px solid rgba(128, 128, 128, 0.486);
+}
+
+menu > ul >li > a:hover {
+    background-color: gray;
+}
+
+main {
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+article > h2 {
+    padding-bottom: 20px;
+    
+}
+
+article >p {
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
 }
